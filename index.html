@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinPulse - Gestão Financeira Inteligente</title>
+  <style>
+    :root {
+      --bg-page: #0b1120;
+      --bg-surface: #131d31;
+      --primary-action: #10b981;
+      --accent-cyan: #38bdf8;
+      --border-color: #26354f;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: system-ui, -apple-system, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow-x: hidden; 
+    }
+
+
+    .hero-saas {
+      text-align: center;
+      padding: 5rem 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .hero-saas h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      color: var(--accent-cyan);
+      margin-bottom: 1rem;
+    }
+    .hero-saas p {
+      color: var(--text-muted); 
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+    .btn-primary {
+      background-color: var(--primary-action);
+      color: #0b1120;
+      font-weight: 700;
+      padding: 0.85rem 2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+   
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+    .bento-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.8rem;
+    }
+    .bento-card h3 {
+      color: var(--accent-cyan);
+      margin-top: 0;
+    }
+    .bento-card p {
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+
+    .pricing-section {
+      text-align: center;
+      padding: 4rem 1.5rem;
+    }
+    .pricing-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .pricing-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 2.5rem;
+      width: 100%;
+      max-width: 320px;
+      text-align: left;
+    }
+    .pricing-card.destacado {
+      border: 2px solid var(--primary-action);
+    }
+    .price {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--primary-action);
+      margin: 1rem 0;
+    }
+
+    
+    .faq-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+    .faq-item {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+
+    footer {
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      padding: 2rem 1.5rem;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+
+  <header class="hero-saas">
+    <h1>Automatize o Fluxo de Caixa e Notas Fiscais da Sua Empresa</h1>
+    <p>A solução definitiva para micro e pequenas empresas simplificarem a gestão financeira sem complicação.</p>
+    <a href="#precos" class="btn-primary">Começar 14 Dias Grátis</a>
+  </header>
+
+  <section class="bento-grid">
+    <div class="bento-card">
+      <h3>⚡ Fluxo Automático</h3>
+      <p>Entradas e saídas sincronizadas automaticamente com o seu caixa em tempo real.</p>
+    </div>
+    <div class="bento-card">
+      <h3>🧾 NF-e em 1 clique</h3>
+      <p>Emissão simplificada de notas fiscais de serviço e produtos sem burocracia.</p>
+    </div>
+    <div class="bento-card">
+      <h3>🔒 Segurança Máxima</h3>
+      <p>Criptografia de ponta a ponta e total conformidade com as normas de dados.</p>
+    </div>
+  </section>
+
+  
+  <section id="precos" class="pricing-section">
+    <h2>Planos e Preços</h2>
+    <p style="color: var(--text-muted);">Escolha o plano ideal para o tamanho do seu negócio</p>
+    
+    <div class="pricing-container">
+     
+      <div class="pricing-card">
+        <h3>Plano MEI</h3>
+        <div class="price">R$ 39<span style="font-size:1rem; font-weight:normal;">/mês</span></div>
+        <p style="color: var(--text-muted);">Ideal para microempreendedores individuais.</p>
+        <a href="#precos" class="btn-primary" style="width: 100%; text-align: center; box-sizing: border-box; margin-top: 1rem;">Escolher MEI</a>
+      </div>
+
+      
+      <div class="pricing-card destacado">
+        <h3>PME Pro</h3>
+        <div class="price">R$ 89<span style="font-size:1rem; font-weight:normal;">/mês</span></div>
+        <p style="color: var(--text-muted);">Para pequenas empresas em crescimento.</p>
+        <a href="#precos" class="btn-primary" style="width: 100%; text-align: center; box-sizing: border-box; margin-top: 1rem;">Escolher Pro</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="faq-section">
+    <h2 style="text-align: center; margin-bottom: 2rem;">Perguntas Frequentes</h2>
+    <div class="faq-item">
+      <strong>Como funciona a integração bancária?[cite: 1]</strong>
+      <p style="color: var(--text-muted); margin-top: 0.5rem;">Nossa plataforma se conecta de forma segura com as principais instituições financeiras do Brasil via Open Banking, importando seu extrato automaticamente.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Preciso cadastrar o cartão para testar?</strong>
+      <p style="color: var(--text-muted); margin-top: 0.5rem;">Não, você pode iniciar o seu teste gratuito de 14 dias sem informar nenhum dado de cartão de crédito.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 FinPulse SaaS. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
